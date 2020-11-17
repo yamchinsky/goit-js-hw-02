@@ -6,7 +6,7 @@
 // const arr = [];
 
 // // Массив clients с тремя элементами
-// const clients = ['Mango', 'Poly', 'Ajax'];
+// const clients = ["Mango", "Poly", "Ajax"];
 
 // console.log(clients); // ["Mango", "Poly", "Ajax"]
 
@@ -20,17 +20,18 @@
 //   numbers.push(`label-${i}`);
 // }
 
-// console.log('numbers: ', numbers); // ['label-0', 'label-1', 'label-2']
+// console.log("numbers: ", numbers); // ['label-0', 'label-1', 'label-2']
 
 // Итерация по массиву
-// const clients = ['Mango', 'Ajax', 'Poly'];
+
+// const clients = ["Mango", "Ajax", "Poly"];
 
 // for (const client of clients) {
 //   console.log(client);
 // }
 
 // // Итерация по строке
-// const string = 'javascript';
+// const string = "javascript";
 
 // for (const character of string) {
 //   console.log(character);
@@ -47,7 +48,7 @@
 //   }
 // }
 
-// console.log('smallestNumber: ', smallestNumber);
+// console.log("smallestNumber: ", smallestNumber);
 
 // Находим самое большое число в массиве
 
@@ -65,8 +66,8 @@
 // const logins = [1, 2, 3, 4, 5];
 
 // const findNumber = function (tania, andriy) {
-//   console.log('Таня что-то делает', tania);
-//   console.log('andriy', andriy);
+//   console.log("Таня что-то делает", tania);
+//   console.log("andriy", andriy);
 //   return tania + andriy;
 // };
 

@@ -32,46 +32,53 @@
 // addLogin добавляет или не добавляет логин в массив.При этом для проверок условия
 // добавления использует результаты вызовов других функций - isLoginUnique и isLoginValid.
 
-function isLoginValid(login, min = 4, max = 16) {
-  const result = login.length > 3 && login.length < 17;
-  return result;
+// function isLoginValid(login, min = 4, max = 16) {
+//   const result = login.length > 3 && login.length < 17;
+//   return result;
+// }
+
+// function isLoginUnique(allLogins, login) {
+//   "use strict";
+//   const result2 = !allLogins.includes(login);
+//   return result2;
+// }
+
+// function addLogin(allLogins, login) {
+//   "use strict";
+//   const SUCCESS = "Логин успешно добавлен!";
+//   const REFUSAL = "Такой логин уже используется!";
+//   const ERROR = "Ошибка! Логин должен быть размером от 4 до 16 символов";
+//   let message;
+//   if (isLoginValid(login) !== true) {
+//     message = ERROR;
+//   } else if (isLoginUnique(allLogins, login) !== true) {
+//     message = REFUSAL;
+//   } else {
+//     message = SUCCESS;
+//     allLogins.push(login);
+//   }
+//   return message;
+// }
+
+// const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+
+// console.log(addLogin(logins, "Ajax"));
+// // 'Логин успешно добавлен!'
+
+// console.log(addLogin(logins, "robotGoogles"));
+// // 'Такой логин уже используется!'
+
+// console.log(addLogin(logins, "Zod"));
+// // 'Ошибка! Логин должен быть от 4 до 16 символов'
+
+// console.log(addLogin(logins, "jqueryisextremelyfast"));
+// // 'Ошибка! Логин должен быть от 4 до 16 символов'
+
+// console.log(addLogin(logins, "Ajaxdsd"));
+
+let counter = 0;
+
+while (counter < 10) {
+  console.log("counter: ", counter);
+  counter += 1;
 }
-
-function isLoginUnique(allLogins, login) {
-  "use strict";
-  const result2 = !allLogins.includes(login);
-  return result2;
-}
-
-function addLogin(allLogins, login) {
-  "use strict";
-  const SUCCESS = "Логин успешно добавлен!";
-  const REFUSAL = "Такой логин уже используется!";
-  const ERROR = "Ошибка! Логин должен быть размером от 4 до 16 символов";
-  let message;
-  if (isLoginValid(login) !== true) {
-    message = ERROR;
-  } else if (isLoginUnique(allLogins, login) !== true) {
-    message = REFUSAL;
-  } else {
-    message = SUCCESS;
-    allLogins.push(login);
-  }
-  return message;
-}
-
-const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-
-console.log(addLogin(logins, "Ajax"));
-// 'Логин успешно добавлен!'
-
-console.log(addLogin(logins, "robotGoogles"));
-// 'Такой логин уже используется!'
-
-console.log(addLogin(logins, "Zod"));
-// 'Ошибка! Логин должен быть от 4 до 16 символов'
-
-console.log(addLogin(logins, "jqueryisextremelyfast"));
-// 'Ошибка! Логин должен быть от 4 до 16 символов'
-
-console.log(addLogin(logins, "Ajaxdsd"));
